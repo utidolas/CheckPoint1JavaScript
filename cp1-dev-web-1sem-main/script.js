@@ -1,5 +1,9 @@
 /*// 3 - BMI(Body mass index) measurement 
-let weight = prompt("Input your body weight")
+
+let weight = parseFloat(prompt("Enter your weight in kg:"));
+let height = parseFloat(prompt("Enter your height in meters:"));
+let bmi = weight / (height * height);
+
 if (weight < 18.5){
     document.write("You are under weight")
 }else if (weight >= 18.5 && weight <= 24.9){
